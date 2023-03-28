@@ -14,3 +14,5 @@ npm run serve
 ```
 npm run build
 ```
+
+### Deploy to firebase - https://test-stopwatch-e2543.web.app
