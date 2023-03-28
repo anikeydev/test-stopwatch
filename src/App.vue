@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <StopWatchList />
+    <StopWatchList 
+      v-bind:stopWatchesArr="stopWatchesArr"
+      v-bind:stepms="stepms"
+      v-on:add-stopwatch="addStopWatch"
+    />
   </div>
 </template>
 
@@ -11,6 +15,24 @@ export default {
   name: 'App',
   components: {
     StopWatchList
+  },
+  data() {
+    return {
+      stepms: 1000, // this is tick of ms, for faster visual tetsing
+      stopWatchesArr: [
+        { id: 1, isActive: false },
+        { id: 2, isActive: false },
+        { id: 3, isActive: false }
+      ]
+    }
+  },
+  methods: {
+    addStopWatch() {
+      const newStopWatch = {
+        id: Date.now
+      }
+      this.stopWatchesArr.push(newStopWatch)
+    }
   }
 }
 
