@@ -31,13 +31,15 @@ export default {
 
 <style>
 .stopwatch-list {
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+
     max-width: 825px;
     margin-top: 72px;
+
+    list-style: none;
 }
 
 @media(min-width: 825px) {

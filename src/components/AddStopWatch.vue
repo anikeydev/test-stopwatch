@@ -7,15 +7,22 @@
     </div>
 </template>
 
+<script>
+export default {
+    name: 'AddStopWatch'
+}
+</script>
+
 <style>
 .stopwatch-add {
-    height: 120px;
-    width: 225px;
     display: flex;
     align-self: start;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    height: 120px;
+    width: 225px;
     margin: 0 25px 45px;
 
     background-color: #696969;

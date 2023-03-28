@@ -11,6 +11,7 @@
 
 <script>
 export default {
+    name: 'StopBtn',
     props: {
         isActive: Boolean
     }

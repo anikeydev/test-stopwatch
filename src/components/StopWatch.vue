@@ -49,6 +49,7 @@ export default {
         }
     },
     computed: {
+        //this is text for view
         time() {
             if (!this.hour && !this.min && !this.sec) {
                 return this.sec < 10 ? `0${this.sec}` : `${this.sec}`
@@ -109,12 +110,13 @@ export default {
 
 <style>
 .stopwatch {
-    height: 120px;
-    width: 225px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    height: 120px;
+    width: 225px;
     margin: 0 25px 45px;
 
     background-color: #696969;
@@ -126,31 +128,34 @@ export default {
 }
 
 .time {
-    width: 100%;
-    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    width: 100%;
+    height: 50%;
+
     color: #9e9e9e;
     border-bottom: 1px solid #9e9e9e;
 }
 
 .time-text {
-    /* color: #9e9e9e; */
     line-height: 1;
     font-size: 22px;
 }
 
 .buttons {
-    width: 100%;
-    height: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    width: 100%;
+    height: 50%;
 }
 
 .btn {
     margin: 0 25px;
+    
     background: transparent;
     border: none;
     outline: none;

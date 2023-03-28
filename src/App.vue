@@ -1,11 +1,9 @@
 <template>
-  <div id="app">
-    <StopWatchList 
-      v-bind:stopWatchesArr="stopWatchesArr"
-      v-bind:stepms="stepms"
-      v-on:add-stopwatch="addStopWatch"
-    />
-  </div>
+  <StopWatchList 
+    v-bind:stopWatchesArr="stopWatchesArr" 
+    v-bind:stepms="stepms" 
+    v-on:add-stopwatch="addStopWatch" 
+  />
 </template>
 
 <script>
@@ -40,9 +38,10 @@ export default {
 
 <style>
 body {
-  background-color: #353638;
   font-family: 'Gotham Pro';
   font-weight: 400;
+
+  background-color: #353638;
 }
 
 #app {
